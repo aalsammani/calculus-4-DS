@@ -1,0 +1,7 @@
+# Build dependencies for Calculus and Matrix Methods for Data Science
+jupyter-book>=1.0,<2
+sphinx-proof
+matplotlib
+numpy
+scipy
+sympy

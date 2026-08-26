@@ -1,0 +1,63 @@
+# Jupyter Book configuration for Calculus and Matrix Methods for Data Science.
+# Reference: https://jupyterbook.org/en/stable/customize/config.html
+
+title: "Calculus and Matrix Methods for Data Science"
+author: "Abdallah Alsammani"
+copyright: "2026"
+logo: ""
+
+# Only build files listed in the table of contents.
+only_build_toc_files: true
+
+execute:
+  # Notebooks are executed at build time so every figure and output is
+  # reproducible. Markdown chapters embed static, pre-verified figures.
+  execute_notebooks: auto
+  timeout: 120
+
+latex:
+  latex_documents:
+    targetname: calculus-matrix-methods.tex
+
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+    mathjax3_config:
+      tex:
+        macros:
+          # Book-wide notation macros (see the Notation Guide chapter).
+          vb: ["\\mathbf{#1}", 1]        # vectors: \vb{v}
+          R: "\\mathbb{R}"               # the real numbers
+          dd: "\\,d"                     # upright differential spacing
+    html_show_copyright: false
+  extra_extensions:
+    - sphinx_proof
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - linkify
+    - substitution
+    - tasklist
+
+html:
+  favicon: ""
+  use_edit_page_button: false
+  use_issues_button: false
+  use_repository_button: true
+  home_page_in_navbar: true
+  baseurl: ""
+
+repository:
+  url: https://github.com/aalsammani/calculus4DS
+  path_to_book: book
+  branch: main
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
