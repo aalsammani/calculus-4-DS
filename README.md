@@ -54,8 +54,9 @@ requirements.txt build dependencies
 make_all_figures.py  regenerates every figure deterministically
 ```
 
-## License and citations
 
-Text and figures © Abdallah Alsammani. The book cites OpenStax *Calculus*
-(CC BY-NC-SA 4.0) and other referenced works in `book/appendices/bibliography.md`;
-see `book/references.bib` for full entries.
+## Copyright and Citations
+
+**Copyright © 2026 Abdallah Alsammani. All rights reserved.**
+
+Third-party materials are used and cited under their respective licenses. See the [Bibliography](book/appendices/bibliography.md) and [`references.bib`](book/references.bib) for sources and attribution.
